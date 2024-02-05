@@ -1,7 +1,17 @@
-import './mocks/mock_location.dart';
+
 import 'package:flutter/material.dart';
 import 'Location_List.dart';
-import './models/location.dart';
+
+class App extends StatelessWidget
+{
+  @override
+  Widget build(BuildContext context){
+    return MaterialApp(home : LocationList());
+  }
+}
+
+
+/*
 
 class App extends StatelessWidget
 {
@@ -14,6 +24,18 @@ class App extends StatelessWidget
     );
   }
 }
+
+
+import 'package:flutter/material.dart';
+import 'location_list.dart';
+
+class App extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(home: LocationList());
+  }
+}
+ */
 
 /*
 import 'package:flutter/material.dart';

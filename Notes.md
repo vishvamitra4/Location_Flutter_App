@@ -9,3 +9,10 @@
 
 ### Scaffold
 -- it present a screen to the user.
+
+
+### Deserealization and Serealization
+-- > Serealization : (Object into String)
+-- > DeSerealization : (String into Object)
+
+### -- > when we add dependency : flutter packages pub run  build_runner build

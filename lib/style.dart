@@ -7,7 +7,7 @@ class Style
     fontSize: 25.0,
   );
   static const smallSize = TextStyle(
-    color: Colors.black38,
+    color: Colors.black87,
     fontSize: 16.0,
   );
 

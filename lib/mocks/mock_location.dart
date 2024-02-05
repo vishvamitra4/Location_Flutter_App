@@ -1,73 +1,93 @@
 import '../models/location.dart';
 import '../models/location_fact.dart';
 
-class MockLocation extends Location
-{
-  static final List<Location>items = [
+mixin MockLocation implements Location {
+  static final List<Location> items = [
     Location(
-        text: "Hey Person - 1",
-        url : "https://images.unsplash.com/photo-1613323593608-abc90fec84ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8aW1hZ2V8ZW58MHx8MHx8fDA%3D",
+        id: 1,
+        name: 'Arashiyama Bamboo Grove',
+        url:
+        'https://cdn-images-1.medium.com/max/2000/1*vdJuSUKWl_SA9Lp-32ebnA.jpeg',
         facts: <LocationFact>[
           LocationFact(
-            title: "Scaffold",
-            text: "It seems like you are using the Scaffold widget in Flutter to create a basic app with an AppBar and a body containing some text. If your AppBar is not displaying a background, it could be due to a few ",
-          ),
+              title: 'Summary',
+              text:
+              'While we could go on about the ethereal glow and seemingly endless heights of this bamboo grove on the outskirts of Kyoto, the sight\'s pleasures extend beyond the visual realm'),
           LocationFact(
-            title: "Default Theme Issue",
-            text: "Check if your app's theme has a default background color. If the theme doesn't specify a background color, the AppBar might not have a background. You can set a theme for your app in the MaterialApp widget.",
-          ),      ]
-    ),
+              title: 'How to Get There',
+              text:
+              'Kyoto airport, with several terminals, is located 16 kilometres south of the city and is also known as Kyoto. Kyoto can also be reached by transport links from other regional airports.')
+        ]),
     Location(
-        text: "Hey Person - 2",
-        url : "https://plus.unsplash.com/premium_photo-1676637000058-96549206fe71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        id: 2,
+        name: 'Mount Fuji',
+        url:
+        'https://pdd5k477ulx482prl3bm3by1-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/Mt-Fuji-Golf-Fairway.jpg',
         facts: <LocationFact>[
           LocationFact(
-            title: "Scaffold",
-            text: "It seems like you are using the Scaffold widget in Flutter to create a basic app with an AppBar and a body containing some text. If your AppBar is not displaying a background, it could be due to a few ",
-          ),
+              title: 'Summary',
+              text:
+              'Japan’s Mt. Fuji is an active volcano about 100 kilometers southwest of Tokyo. Commonly called “Fuji-san,” it’s the country’s tallest peak, at 3,776 meters. A pilgrimage site for centuries, it’s considered one of Japan’s 3 sacred mountains, and summit hikes remain a popular activity. Its iconic profile is the subject of numerous works of art, notably Edo Period prints by Hokusai and Hiroshige.'),
           LocationFact(
-            title: "Default Theme Issue",
-            text: "Check if your app's theme has a default background color. If the theme doesn't specify a background color, the AppBar might not have a background. You can set a theme for your app in the MaterialApp widget.",
-          ),      ]
-    ),
+              title: 'Did You Know',
+              text:
+              'There are three cities that surround Mount Fuji: Gotemba, Fujiyoshida and Fujinomiya.')
+        ]),
     Location(
-        text: "Hey Person - 3",
-        url : "https://images.unsplash.com/photo-1621155346337-1d19476ba7d6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        id: 3,
+        name: 'Kiyomizu-dera',
+        url:
+        'https://media4.trover.com/T/5a97b80c8beb7fbf57002ffe/fixedw_large_4x.jpg',
         facts: <LocationFact>[
           LocationFact(
-            title: "Scaffold",
-            text: "It seems like you are using the Scaffold widget in Flutter to create a basic app with an AppBar and a body containing some text. If your AppBar is not displaying a background, it could be due to a few ",
-          ),
+              title: 'Summary',
+              text:
+              'Kiyomizu-dera, officially Otowa-san Kiyomizu-dera, is an independent Buddhist temple in eastern Kyoto. The temple is part of the Historic Monuments of Ancient Kyoto UNESCO World Heritage site.'),
           LocationFact(
-            title: "Default Theme Issue",
-            text: "Check if your app's theme has a default background color. If the theme doesn't specify a background color, the AppBar might not have a background. You can set a theme for your app in the MaterialApp widget.",
-          ),      ]
-    ),
+              title: 'Architectural Style',
+              text: 'Japanese Buddhist architecture')
+        ]),
     Location(
-        text: "Hey Person - 4",
-        url : "https://images.unsplash.com/photo-1566438480900-0609be27a4be?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        id: 4,
+        name: 'Kinkaku-ji',
+        url:
+        'https://cdn-images-1.medium.com/max/1600/1*sncLZ1eNLYk3s-v76nJn8w.jpeg',
         facts: <LocationFact>[
           LocationFact(
-            title: "Scaffold",
-            text: "It seems like you are using the Scaffold widget in Flutter to create a basic app with an AppBar and a body containing some text. If your AppBar is not displaying a background, it could be due to a few ",
-          ),
+              title: 'Summary',
+              text:
+              'Kinkaku-ji, officially named Rokuon-ji, is a Zen Buddhist temple in Kyoto, Japan. It is one of the most popular buildings in Japan, attracting a large number of visitors annually.'),
           LocationFact(
-            title: "Default Theme Issue",
-            text: "Check if your app's theme has a default background color. If the theme doesn't specify a background color, the AppBar might not have a background. You can set a theme for your app in the MaterialApp widget.",
-          ),      ]
-    ),
+              title: 'Did You Know',
+              text:
+              'The Golden Pavilion is set in a magnificent Japanese strolling garden.')
+        ]),
+    Location(
+        id: 5,
+        name: 'Odaiba',
+        url:
+        'https://jp.openrice.com/userphoto/Article/0/1/0000CM2AF2F38CD85AB341j.jpg',
+        facts: <LocationFact>[
+          LocationFact(
+              title: 'Summary',
+              text:
+              'Accessed via the Rainbow Bridge or the futuristic Yurikamome train, Odaiba is a high-tech entertainment hub on an artificial island in Tokyo Bay. Visitors head to the beach at Seaside Park, enjoy Mt. Fuji views from the Daikanransha Ferris wheel, and interact with robots at the Miraikan science museum. Malls include Aqua City and the Venice-themed VenusFort, and there are sushi bars with views along the waterfront.'),
+          LocationFact(
+              title: 'Did You Know',
+              text:
+              'The pedestrian path begins a short walk from Shibaura-futo Station along the Yurikamome on the "Tokyo side" of the bridge, while Odaiba Kaihinkoen Station is the nearest station on the "Odaiba side."')
+        ]),
   ];
-  static Location fetchAny()
-  {
+
+  static Location fetchAny() {
     return MockLocation.items[0];
   }
 
-  static List<Location> fetchAll()
-  {
+  static List<Location> fetchAll() {
     return MockLocation.items;
   }
 
-  static Location fetch(int index){
+  static Location fetch(int index) {
     return MockLocation.items[index];
   }
 }
